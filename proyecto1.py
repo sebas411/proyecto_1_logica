@@ -61,10 +61,15 @@ def DPLL(clause, I):
       item.remove(Lc)
   
   Ic = cp.deepcopy(I)
-  Ic.append({L:True})
+  isInIc = False
+  for item in Ic:
+    if L in item:
+      isInIc = True
+  if not isInIc:
+    Ic.append({L:True})
 
-  result, I1 = DPLL(Bc, Ic)
-  if result: return True, I1
+    result, I1 = DPLL(Bc, Ic)
+    if result: return True, I1
 
   #caso falso de la variable
   Bc2 = cp.deepcopy(clause)
@@ -76,10 +81,16 @@ def DPLL(clause, I):
       item.remove(L)
   
   Ic2 = cp.deepcopy(I)
-  Ic2.append({L:False})
+  isInIc2 = False
+  for item in Ic2:
+    if L in item:
+      isInIc2 = True
+  if not isInIc2:
+    Ic2.append({L:False})
 
-  result2, I2 = DPLL(Bc2, Ic2)
-  if result2: return True, I2
+    result2, I2 = DPLL(Bc2, Ic2)
+    if result2: return True, I2
+
   return False, None
 
   
@@ -103,7 +114,7 @@ for i in range(len(clauses)):
   if result:
     print("Clausula %i: Exito con combinación: "%(i+1), combination)
   else:
-    print("Clausula %i: No tiene solucion"%(i+1))
+    print("Clausula %i: Es insatisfacible"%(i+1))
 
 print("\nUtilizando DPLL:")
 for i in range(len(clauses)):
@@ -112,4 +123,4 @@ for i in range(len(clauses)):
   if result:
     print("Clausula %i: Exito con combinación: "%(i+1), combination)
   else:
-    print("Clausula %i: No tiene solucion"%(i+1))
+    print("Clausula %i: Es insatisfacible"%(i+1))
