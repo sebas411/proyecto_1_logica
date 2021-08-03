@@ -1,6 +1,36 @@
+"""UNIVERSIDAD DEL VALLE DE GUATEMALA 
+ * LOGICA MATEMÁTICA 
+ * RESULTADOS: PROYECTO 1 - IMPLEMENTACIÓN DE ALGORTIMO DPLL Y FUERZA BRUTA 
+/* File:     proyecto1.py
+ * Purpose:  Se implementa para determinar si las cláusulas otorgadas 
+ *
+ *              cumplen con las determinaciónes del algortimo. 
+ *              
+ * Run:      py proyecto1.py 
+ *          
+ *
+ * Input:    none            
+ * Output:   Resultado de las corridas del algortimo según 
+ *           las cláusulas evaluadas en el programa
+ *
+ * Integrantes:
+ *    1. María Mercedes Retolaza 
+ *    2. Julio Roberto Herrera 
+ *    3. Sebastían Maldonado
+ *    4. Martha Gomez 
+ *    5. Fátima González 
+ */""" 
+
+"""------------------------------------------------------------------------------"""
+
+#Implementación de librerías a utilizar 
+
 import itertools as it
 import random
 import copy as cp
+
+#Definición de algoritmo: Por fuerza bruta 
+#Parámetro de entrada: Una cláusula 
 
 def bruteForce(clause):
   variables = []
@@ -30,6 +60,9 @@ def bruteForce(clause):
       return (True, posibility)
   return (False, None)
 
+#Función de selección de variables 
+#Parámetro de entrada: Una cláusula 
+
 def selectVariable(clause):
   variables = []
 
@@ -41,7 +74,8 @@ def selectVariable(clause):
   return variables[random.randint(0, len(variables)-1)]
   
         
-
+#Implementación de algortimo DPLL 
+#Parámetro de entrada: Una cláusula 
 def DPLL(clause, I):
   if len(clause) == 0: return True, I
 
@@ -93,10 +127,8 @@ def DPLL(clause, I):
 
   return False, None
 
-  
 
-
-
+#Definición de cláusulas a analizar en algortimo 
 
 clauses = [
   [{"p"}, {"!p"}],
@@ -106,6 +138,11 @@ clauses = [
   [{"!p", "!q", "!r"}, {"q", "!r", "p"}, {"!p", "q", "r"}],
   [{"r"}, {"!q", "!r"}, {"!p", "q", "!r"}, {"q"}]
 ]
+
+#Descripción de resultados 
+
+print("RESULTADOS DE SIMULACIÓN E IMPLEMENTACIÓN:")
+
 
 print("Por fuerza bruta:")
 for i in range(len(clauses)):
