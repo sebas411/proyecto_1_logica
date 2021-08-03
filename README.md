@@ -33,5 +33,5 @@ Elaborado por: Grupo CANELA
 * Julio Roberto Herrera 
 * Martha Laurelinda Gomez 
 * Fátima Priscilla González 
-* Sebastían Maldonado 
+* Sebastián Maldonado 
 
