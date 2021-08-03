@@ -1,62 +1,37 @@
-# Project Title
-
-Simple overview of use/purpose.
+# Implementación Fuerza bruta y Algortimo DPLL 
+Proyecto 1 del curso de Lógica Matemática 
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Se realiza  un  programa  en  Python  que  implementa  un  algoritmo  utilizando  fuerza bruta, donde la entrada sea una f ́ormula booleana en forma de cl ́ausula y devuelve falsa con asignación vacıa o nula (en caso de ser insatisfacible) o devuelve verdaderocon la asignacion correspondiente (en caso de ser satisfacible).
+
+También se realiza un programa en Python que implemente el algoritmo DPLL,  donde  la  entrada  sea  una  f ́ormula  booleana  en  forma  de  cl ́ausula  easignaci ́on vac ́ıa y devuelva falsa con asignaci ́on vac ́ıa o nula (en caso de ser insa-tisfacible) o devuelva verdadero con la asignaci ́on correspondiente (en caso de sersatisfacible).
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Python 3.9.6
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Se deberá de descargar el documento o repositorio completo para poder implementar el programa principal y así obtener el resultado de los algoritmos. 
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Abrir terminal (cmd) 
+* Introducir: 
 ```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
+py proyecto1.py
 ```
 
 ## Authors
 
-Contributors names and contact info
+Elaborado por: Grupo CANELA 
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+* María Mercedes Retolaza
+* Julio Roberto Herrera 
+* Martha Laurelinda Gomez 
+* Fátima Priscilla González 
+* Sebastían Maldonado 
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
