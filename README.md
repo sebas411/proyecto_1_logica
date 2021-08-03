@@ -3,9 +3,9 @@ Proyecto 1 del curso de Lógica Matemática
 
 ## Description
 
-Se realiza  un  programa  en  Python  que  implementa  un  algoritmo  utilizando  fuerza bruta, donde la entrada sea una f ́ormula booleana en forma de cl ́ausula y devuelve falsa con asignación vacıa o nula (en caso de ser insatisfacible) o devuelve verdaderocon la asignacion correspondiente (en caso de ser satisfacible).
+Se realiza  un  programa  en  Python  que  implementa  un  algoritmo  utilizando  fuerza bruta, donde la entrada sea una fórmula booleana en forma de cláusula y devuelve falsa con asignación vacıa o nula (en caso de ser insatisfacible) o devuelve verdadero con la asignacion correspondiente (en caso de ser satisfacible).
 
-También se realiza un programa en Python que implemente el algoritmo DPLL,  donde  la  entrada  sea  una  f ́ormula  booleana  en  forma  de  cl ́ausula  easignaci ́on vac ́ıa y devuelva falsa con asignaci ́on vac ́ıa o nula (en caso de ser insa-tisfacible) o devuelva verdadero con la asignaci ́on correspondiente (en caso de sersatisfacible).
+También se realiza un programa en Python que implemente el algoritmo DPLL,  donde  la  entrada  sea  una  fórmula  booleana  en  forma  de  cláusula y una asignación vacía y devuelva falsa con asignación vacía o nula (en caso de ser insatisfacible) o devuelva verdadero con la asignación correspondiente (en caso de ser satisfacible).
 
 ## Getting Started
 
